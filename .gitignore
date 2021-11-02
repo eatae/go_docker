@@ -1,6 +1,3 @@
-# Ignore the node_modules directory
-node_modules/
-
 # Ignore Logs
 logs
 *.log
@@ -15,8 +12,5 @@ logs
 db_data
 
 # Ignore IDE specific files
-../specProject/.idea/
 .DS_Store
 .idea/
-.vscode/
-*.sw*

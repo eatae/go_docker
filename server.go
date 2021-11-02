@@ -20,10 +20,10 @@ func main() {
 		}
 		_, _ = fmt.Fprintf(w, "Hello, %s!\n", r.UserAgent())
 		_, _ = fmt.Fprintf(w, "I'm running on %s/%s.\n", myOS, myArch)
-		_, _ = fmt.Fprintf(w, "I'm running %s of a container.\n", inContainer)
+		_, _ = fmt.Fprintf(w, "I'm - running %s of a container.\n", inContainer)
 	})
 
-	err := http.ListenAndServe(":8092", r)
+	err := http.ListenAndServe(":80", r)
 	if err != nil {
 		log.Fatalln(err)
 	}
